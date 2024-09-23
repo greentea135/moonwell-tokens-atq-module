@@ -158,7 +158,7 @@ function transformMarketsToTags(chainId: string, markets: Market[]): ContractTag
   }
 
   return validMarkets.map((market) => {
-    const maxNameLength = 45;
+    const maxNameLength = 44;
     const truncatedNameText = truncateString(market.outputToken.symbol, maxNameLength);
 
     return {
